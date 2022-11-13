@@ -164,7 +164,7 @@ class Correspondence:
             (x_img2, y_img2) = keyPoints2[match.trainIdx].pt # right image
             print("Left image:", (x_img1, y_img1))
             print("Right image:", (x_img2, y_img2))
-            return
+            
             x_img1 = int(x_img1);   x_img2 = int(x_img2)
             y_img1 = int(y_img1);   y_img2 = int(y_img2)
             disparity = 8 * abs(x_img2 - x_img1)
